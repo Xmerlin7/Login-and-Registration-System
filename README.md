@@ -35,8 +35,11 @@ To compile the project, follow these steps:
    git clone https://github.com/Xmeriln7/login-registration-system.git
 
 2. Make sure you are in the right directory
-```bash
+    ```bash
     cd login-registration-system
-
-    g++ main.cpp User.cpp UserManager.cpp -o main
-    .\main
+3.  Compile
+    ```bash
+        g++ main.cpp User.cpp UserManager.cpp -o main
+4. RUN
+    ```bash
+        .\main
