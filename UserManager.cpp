@@ -1,8 +1,5 @@
 #include "UserManager.h"
 
-#include <iostream>
-
-/// @brief 
 void UserManager::RegisterUser() {
     std::string username, password;
     std::cout << "Please enter your username: ";
