@@ -7,7 +7,7 @@ int main()
     char choice;
     do
     {
-        // system("cls");
+        system("cls");
         std::cout << "\n\n\t\t1. Register User " << std::endl;
         std::cout << "\t\t2.Login " << std::endl;
         std::cout << "\t\t3. Show User List " << std::endl;
