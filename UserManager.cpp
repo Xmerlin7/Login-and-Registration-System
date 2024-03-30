@@ -2,7 +2,7 @@
 
 void UserManager::registerUser()
 {
-    bool flag;
+    bool flag = true;
     std::string username, password;
     std::cout << "Please enter your username: ";
     std::cin >> username;
@@ -11,9 +11,10 @@ void UserManager::registerUser()
     for (int i = 0; i < users.size(); i++)
     {
         if ((users[i].getUsername() == username) && (users[i].getUserPass() == password))
+        {
             flag = false;
-        else
-              flag = true;
+            break;
+        }
     }
 
     /*check that is not alread registerd*/
@@ -67,7 +68,7 @@ void UserManager::searchUser(std::string username)
 
 void UserManager::deleteUser(std::string username)
 {
-        for (int i = 0; i < users.size(); i++)
+    for (int i = 0; i < users.size(); i++)
     {
         if ((users[i].getUsername() == username))
         {
