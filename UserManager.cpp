@@ -11,7 +11,7 @@ void UserManager::RegisterUser()
     for (int i = 0; i < users.size(); i++)
     {
         if ((users[i].getUsername() == username) && (users[i].getUserPass() == password))
-            flag = false
+            flag = false;
     }
     flag = true;
     /*check that is not alread registerd*/
@@ -43,15 +43,37 @@ bool UserManager::LoginUser(std::string name, std::string pass)
 
 void UserManager::ShowUser()
 {
-    // Implementation
+    if (users.size())
+    {
+        for (int i = 0; i < users.size(); i++)
+            std::cout << users[i].getUsername() << "\n";
+    }
+    else
+        std::cout << "There is no Users Registerd yet \n";
 }
 
 void UserManager::SearchUser(std::string username)
 {
-    // Implementation
+    for (int i = 0; i < users.size(); i++)
+    {
+        if ((users[i].getUsername() == username))
+            std::cout << "User found\n";
+        else
+            std::cout << "User not found\n";
+    }
 }
 
 void UserManager::DeleteUser(std::string username)
 {
-    // Implementation
+        for (int i = 0; i < users.size(); i++)
+    {
+        if ((users[i].getUsername() == username))
+        {
+            
+            std::cout << "User found\n";
+        }
+            
+        else
+            std::cout << "User not found\n";
+    }
 }
