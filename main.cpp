@@ -7,6 +7,7 @@ int main()
     char choice;
     do
     {
+        /*if u use linux please replace thi line with `system("clear);` */
         system("cls");
         std::cout << "\n\n\t\t1. Register User " << std::endl;
         std::cout << "\t\t2.Login " << std::endl;
