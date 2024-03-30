@@ -33,7 +33,6 @@ void UserManager::RegisterUser()
 
 bool UserManager::LoginUser(std::string name, std::string pass)
 {
-
     for (int i = 0; i < users.size(); i++)
     {
         if ((users[i].getUsername() == name) && (users[i].getUserPass() == pass))
