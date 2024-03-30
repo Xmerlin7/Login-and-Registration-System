@@ -23,6 +23,7 @@ This project implements a simple command-line login and registration system usin
 To compile and run this project, you need the following:
 
 - C++ compiler (e.g., g++)
+- OOP
 - Standard C++ library
 
 ## Installation
