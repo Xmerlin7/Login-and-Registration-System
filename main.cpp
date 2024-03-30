@@ -1,6 +1,6 @@
 #include "UserManager.h"
 using namespace std;
-main()
+int main()
 {
     UserManager usermanage;
 
@@ -21,7 +21,7 @@ main()
         {
         case 1:
         {
-            usermanage.RegiserUser();
+            usermanage.registerUser();
             break;
         }
         case 2:
@@ -31,7 +31,7 @@ main()
             cin >> username;
             cout << "\t\tEnter Password :";
             cin >> password;
-            usermanage.LoginUser(username, password);
+            usermanage.loginUser(username, password);
             break;
         }
         case 3:

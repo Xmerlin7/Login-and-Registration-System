@@ -1,6 +1,6 @@
 #include "UserManager.h"
 
-void UserManager::RegisterUser()
+void UserManager::registerUser()
 {
     bool flag;
     std::string username, password;
@@ -31,7 +31,7 @@ void UserManager::RegisterUser()
     }
 }
 
-bool UserManager::LoginUser(std::string name, std::string pass)
+bool UserManager::loginUser(std::string name, std::string pass)
 {
     for (int i = 0; i < users.size(); i++)
     {
@@ -41,7 +41,7 @@ bool UserManager::LoginUser(std::string name, std::string pass)
     return false;
 }
 
-void UserManager::ShowUser()
+void UserManager::showUser()
 {
     if (users.size())
     {
@@ -52,7 +52,7 @@ void UserManager::ShowUser()
         std::cout << "There is no Users Registerd yet \n";
 }
 
-void UserManager::SearchUser(std::string username)
+void UserManager::searchUser(std::string username)
 {
     for (int i = 0; i < users.size(); i++)
     {
@@ -63,7 +63,7 @@ void UserManager::SearchUser(std::string username)
     }
 }
 
-void UserManager::DeleteUser(std::string username)
+void UserManager::deleteUser(std::string username)
 {
         for (int i = 0; i < users.size(); i++)
     {

@@ -10,11 +10,11 @@ private:
     std::vector<User> users;
 
 public:
-    void RegisterUser();
-    bool LoginUser(std::string name, std::string pass);
-    void ShowUser();
-    void SearchUser(std::string username);
-    void DeleteUser(std::string username);
+    void registerUser();
+    bool loginUser(std::string name, std::string pass);
+    void showUser();
+    void searchUser(std::string username);
+    void deleteUser(std::string username);
 };
 
 #endif // USERMANAGER_H
