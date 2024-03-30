@@ -7,10 +7,11 @@ class User
 {
 private:
 	std::string userName, userPassword;
+
 public:
 	User(std::string userName, std::string userPassword);
 	std::string getUsername();
 	std::string getUserPass();
 };
 
-#endif
+#endif //LOG_H
