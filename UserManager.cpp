@@ -17,7 +17,11 @@ void UserManager::RegisterUser() {
 }
 
 bool UserManager::LoginUser(std::string name, std::string pass) {
-    
+    std::string username, password;
+    std::cout << "Please enter your username: ";
+    std::cin >> username;
+    std::cout << "Please enter your password: ";
+    std::cin >> password;    
 }
 
 void UserManager::ShowUser() {
