@@ -69,10 +69,9 @@ void UserManager::DeleteUser(std::string username)
     {
         if ((users[i].getUsername() == username))
         {
-            
+            users.erase(users.begin() + i);
             std::cout << "User found\n";
         }
-            
         else
             std::cout << "User not found\n";
     }
