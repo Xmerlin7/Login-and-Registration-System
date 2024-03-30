@@ -12,8 +12,10 @@ void UserManager::registerUser()
     {
         if ((users[i].getUsername() == username) && (users[i].getUserPass() == password))
             flag = false;
+        else
+              flag = true;
     }
-    flag = true;
+
     /*check that is not alread registerd*/
     if (flag)
     {
