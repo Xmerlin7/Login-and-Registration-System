@@ -17,7 +17,7 @@ void UserManager::RegisterUser() {
     users.push_back(newUser);
     
     std::cout << "User registered successfully.\n";
-
+}
 
 bool UserManager::LoginUser(std::string name, std::string pass) {
     // Implementation
