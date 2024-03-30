@@ -1,10 +1,12 @@
 #include "UserManager.h"
+#include <string>
 
 void UserManager::RegisterUser() {
     string username, password;
     cout << " please Enter your name";
-    cin
-
+    cin >> username;
+    cout << " please Enter your Password";
+    cin >> password;
 }
 
 bool UserManager::LoginUser(std::string name, std::string pass) {
