@@ -17,7 +17,7 @@ void UserManager::RegisterUser() {
 }
 
 bool UserManager::LoginUser(std::string name, std::string pass) {
-    // Implementation
+    
 }
 
 void UserManager::ShowUser() {
